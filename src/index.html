@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="page__main main" style="background-image: url(img/main/bg.jpg);">
+					<div class="main__container">
+						<div class="main__wrapper">
+							<p class="main__mode">OPEN EVERYDAY6AM - 9PM</p>
+							<h1 class="main__title">A bad day with lunch is better than a good day without it.</h1>
+							<div class="main__actions">
+								<div class="main__button button">Reserve a table</div>
+								<div class="main__socials">
+									<div class="main_social">
+										<img src="@img/main/Fb.svg" alt="Fb">
+									</div>
+									<div class="main_social">
+										<img src="@img/main/lg.svg" alt="lg">
+									</div>
+									<div class="main_social">
+										<img src="@img/main/Tw.svg" alt="Tw">
+									</div>
+									<div class="main_social">
+										<img src="@img/main/Yt.svg" alt="Yt">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
