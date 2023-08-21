@@ -53,9 +53,62 @@ body::after {
 	background-color: #eee;
 	padding: 20px;
 	width: 100%;
-	max-width: 900px;
+	max-width: 700px;
 	border-radius: 20px;
+	text-align: end;
 	.lock & {
 		visibility: visible;
 	}
 }
+
+.popup {
+
+	&__close {
+		margin-left: auto;
+	}
+
+	&__form {
+		text-align: left;
+		display: flex;
+		flex-direction: column;
+		row-gap: 1.875rem;
+	}
+}
+.form {
+
+	&__title {
+		display: block;
+		margin-bottom: rem(15);
+	}
+
+	&__item {
+		
+	}
+
+	&__lable {
+	}
+
+	&__input {
+	}
+
+	&__button {
+		align-self: center;
+	}
+}
+.input {
+}
+.form-diller {
+
+	&__item {
+	}
+}
+.tel {
+}
+.button {
+}
+
+.form__error {
+	margin-top: rem(5);
+	color: red;
+}
+

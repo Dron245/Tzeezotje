@@ -41,7 +41,7 @@
 		position: relative;
 		z-index: 2;
 		@media (max-width:$tablet){
-			margin-right: 20px;
+			// margin-right: 20px;
 		}
 	}
 
@@ -50,6 +50,9 @@
 		display: block;
 		position: relative;
 		// display: flex;
+		@media (max-width:$mobile){
+			 margin-top: 0.625rem; 
+		}
 		&::before{
 			position: absolute;
 			// flex: 0 0 24px;
