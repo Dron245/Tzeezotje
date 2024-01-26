@@ -1,5 +1,149 @@
 //====================================================================================================
 
+.test {
+	display: grid;
+	display: none;
+	// place-content: center;
+	height: 2000px;
+	width: 500px;
+}
+
+
+
+.wrap {
+	width: 500px;
+	height: 500px;
+	background-color: rgb(179, 182, 171);
+	display: grid;
+	// place-items: center;
+	// &:hover{
+	// 	.inner {
+	// 		translate: 0 -250px;
+	// 		box-shadow: 0 0 0 20px rgb(179, 182, 171);
+	// 		box-shadow: 0 0 0 20px white;
+
+	// 		&::before,&::after{
+	// 		// top: 100px;
+	// 		transform: translateY(350px);
+	// 		opacity: 1;
+	// 		transition: all .5s;
+	// 		}
+
+	// 		&::before{
+	// 			left: -40px;
+	// 			border-radius: 0 20px 0 0;
+	// 			box-shadow: 5px -5px 0 5px white;
+	// 		}
+
+	// 		&::after{
+	// 			right: -40px;
+	// 			border-radius: 20px 0px 0 0;
+	// 			box-shadow: -5px -5px 0 5px white;
+	// 		}
+	// 	}
+	// }
+}
+
+.inner {
+	position: relative;
+	// width: 200px;
+	height: 200px;
+	background-color: #746786;
+	transition: .5s;
+	padding: 10px;
+	
+	&::before, &::after{
+		content:'';
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		background-color: transparent;
+		opacity: 0;
+		top: -250px;
+	}
+
+	&::before{
+		left: 0px;
+	}
+
+	&::after{
+		right: 0px;
+	}
+}
+
+
+.title {
+	font-size: rem(50);
+	text-align: center;
+	padding-block: 50px;
+	font-weight: 700;
+}
+.sub-title {
+	font-size: rem(26);
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.buttonn {
+	padding: 50px;
+	background-color: wheat;
+
+}
+svg {
+	border: 2px solid red;
+	// overflow: visible;
+	// height: 100%;
+	
+	/* Fix Safari rendering bug */
+	// transform: translateZ(0);
+ }
+
+#path01 {
+	stroke-width: 0;
+	width: 100%;
+ }
+#path02 {
+	stroke-width: 0;
+	width: 100%;
+ }
+
+ #rect01 {
+	fill: white;
+	stroke: white;
+ }
+ #rect02 {
+	fill: red;
+	stroke: red;
+ }
+
+
+.motion-test {
+	// height: 1000px;
+	min-height: 1000vh;
+	background: url('@img/main/bg.jpg') 0 0 / cover no-repeat;
+	background: rgb(182, 176, 181);
+	position: relative;
+	display: grid;
+	// place-items: center;
+	img {
+		position: absolute;
+		// top: 50%;
+	}
+}
+
+.rect1 {
+	position: absolute;
+	top: 0;
+}
+
+.rect001 {
+	margin-top: 2000px;
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	color: white;
+}
+
 .page {
 
 		&__main {

@@ -72,6 +72,8 @@
 		"webpack-stream": "latest"
 	},
 	"dependencies": {
+		"gsap": "^3.12.5",
+		"overlayscrollbars": "^2.4.7",
 		"simplebar": "latest"
 	}
 }
